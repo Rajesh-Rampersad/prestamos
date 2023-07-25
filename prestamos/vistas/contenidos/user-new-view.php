@@ -57,14 +57,14 @@
 						<div class="form-group">
 							<label for="usuario_telefono" class="bmd-label-floating">Teléfono</label>
 							<input type="text" pattern="[0-9()+]{8,20}" class="form-control" name="usuario_telefono_reg"
-								id="usuario_telefono" maxlength="20" required="">
+								id="usuario_telefono" maxlength="20">
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="form-group">
 							<label for="usuario_direccion" class="bmd-label-floating">Dirección</label>
 							<input type="text" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ().,#\- ]{1,190}" class="form-control"
-								name="usuario_direccion_reg" id="usuario_direccion" maxlength="190" required="">
+								name="usuario_direccion_reg" id="usuario_direccion" maxlength="190">
 						</div>
 					</div>
 				</div>
@@ -86,7 +86,7 @@
 						<div class="form-group">
 							<label for="usuario_email" class="bmd-label-floating">Email</label>
 							<input type="email" class="form-control" name="usuario_email_reg" id="usuario_email"
-								maxlength="70">
+								maxlength="70" required="">
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
