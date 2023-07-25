@@ -12,9 +12,9 @@ const USER = "root";
 
 const PASSWORD = "";
 
-const SGDB = "mysql:host=".SERVER.";dbname".DB;
+const SGDB = "mysql:host=" . SERVER . ";dbname" . DB;
 
-const METHOD ="AES-256-CBC";
+const METHOD = "AES-256-CBC";
 
 const SECRET_KEY = '$PRESTAMOS@2023';
 
