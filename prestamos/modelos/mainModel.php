@@ -96,7 +96,7 @@ protected static function ejecutar_consulta_simple($consulta){
     }
 
     /*--------- Funcion para validar datos ---------*/
-    protected public function($filtro,$cadena){
+    protected public function verificar_datos($filtro,$cadena){
         if(preg_match("/^".$filtro."$/", $cadena)){
             return false;
 
@@ -144,21 +144,20 @@ protected static function ejecutar_consulta_simple($consulta){
 
             }
 
-            $ci=i;
-            for($i=$pagina; $i>=$Npaginas; $i++);{
+            $ci=0;
+			for($i=$pagina; $i<=$Npaginas; $i++){
+				if($ci>=$botones){
+					break;
+				}
 
-                if($ci>=$botones){
-                    break;
-                }
-                if($pagina==$i){
-                    $tabla.='<li class="page-item">
-				<a class="page-link active" href="'.$url.$i.'/">'.$i.'</a></li>';
-                }else{
-                    $tabla.='<li class="page-item">
-                    <a class="page-link" href="'.$url.$i.'/">'.$i.'</a></li>';
-                }
-                $ci++;
-            }
+				if($pagina==$i){
+					$tabla.='<li class="page-item"><a class="page-link active" href="'.$url.$i.'/">'.$i.'</a></li>';
+				}else{
+					$tabla.='<li class="page-item"><a class="page-link" href="'.$url.$i.'/">'.$i.'</a></li>';
+				}
+
+				$ci++;
+			}
 
             if ($pagina==$Npaginas) {
 
