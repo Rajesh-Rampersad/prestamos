@@ -175,7 +175,7 @@ class usuarioControlador extends usuarioModelo
         }
 
 
-        /*== Comprobando claves ==*/
+        /*== Comprobando claves ====*/
         if ($clave1 != $clave2) {
             $alerta = [
                 "Alerta" => "simple",
