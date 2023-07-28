@@ -4,7 +4,8 @@ require_once "../config/APP.php";
 
 if (isset($_POST['usuario_dni_reg'])) {
 
-    /*---------Instancia al controlador--------*/
+    /*---------Instancia al controladore
+    --------*/
     require_once "../controladores/usuarioControlador.php";
     $ins_usuario = new usuarioControlador();
 
